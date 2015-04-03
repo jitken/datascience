@@ -1,0 +1,19 @@
+select value from (
+  select a.docid as a_docid, b.docid as b_docid, sum(a.count * b.count) as value 
+  from Frequency a,Frequency b where a.term = b.term and a.docid < b.docid 
+  group by a.docid, b.docid
+) where a_docid = '10080_txt_crude' and b_docid = '17035_txt_earn';
+
+
+select max(value) from (
+  select Frequency.docid, sum(a.count * Frequency.count) as value
+  from Frequency, (
+    select 'q' as docid, 'washington' as term, 1 as count 
+    union
+    select 'q' as docid, 'taxes' as term, 1 as count
+    union 
+    select 'q' as docid, 'treasury' as term, 1 as count
+  ) a
+  where Frequency.term = a.term group by Frequency.docid 
+  order by value
+);

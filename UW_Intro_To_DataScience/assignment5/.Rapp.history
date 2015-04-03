@@ -1,0 +1,111 @@
+demo
+12/(12+5+3)
+12/(12+5+3)*100
+10+4+1+7
+10/22*100
+7/22*100
+6+7+4+2+1+4
+6/24
+7/24 * 100
+13/(13+5+3)
+7/(7+6+4+2+1+4)
+6/(7+6+4+2+1+4)
+10/(10+4+1+8)
+8/(10+4+1+8)
+1/39
+3/39
+2/39
+install.packages("ggplot2")
+install.packages("reshape")
+install.packages("reshape2")
+pwd
+ls
+pwd
+-1:1
+sd(-1:1)
+var(-1:1)
+help var
+var help
+x = 1
+answer <- "HELLO"
+answer
+erf
+help()
+sqrt
+import
+import pracma
+import package pracma
+install.packages("ggplot2")
+install.packages("pracma")
+erf
+erfc
+erfc(1)
+cd ~/Desktop
+createDataPartition
+??createDataPartition
+library(caret)
+createDataPartition
+setwd('/Users/jittan/Desktop/DataScience/UW_DS/datasci_course_materials/assignment5');
+source('solutions.r')
+source('solutions.r')
+s9a <- ggplot(data, aes(x = chl_big, y = time));#
+s9a + geom_point(alpha=0.1);
+summary(data)
+summary(filtered_data)
+factor(data$pop)
+s9a <- ggplot(data, aes(x = chl_big, y = time));#
+s9a + geom_point(aes(color=factor(pop)));
+s9b <- ggplot(filtered_data, aes(x = chl_big, y = time));#
+s9b + geom_point(aes(color=factor(pop)));#
+readline("Press <return to continue") ;
+summary(filtered_data)
+summary(data)
+summary(data)
+source('solutions.r')
+s3 <- ggplot(data, aes(x = chl_small, y = pe));#
+s3 + geom_point(aes(color=factor(pop)));
+print(model_rpart)
+acc_rpart
+acc_randomForest
+importance(model_randomForest)
+importance(model_rpart)
+acc_svm
+table(pred = test_predict_rpart, true = testing$pop);#
+table(pred = test_predict_randomForest, true = testing$pop);#
+table(pred = test_predict_svm, true = testing$pop);
+p1 <- ggplot(data, aes(x=fsc_small)) + geom_histogram();#
+p2 <- ggplot(data, aes(x=fsc_perp)) + geom_histogram();#
+p3 <- ggplot(data, aes(x=fsc_big)) + geom_histogram();#
+p4 <- ggplot(data, aes(x=pe)) + geom_histogram();#
+p5 <- ggplot(data, aes(x=chl_small)) + geom_histogram();#
+p6 <- ggplot(data, aes(x=chl_small)) + geom_histogram();#
+#
+source('multiplot.r');#
+multiplot(p1, p2, p3, p4, p5, p6, cols=2);
+acc_svm
+facc_svm
+facc_svm - acc_svm
+source('solutions.r')
+length(filtered_data)
+length(filtered_data)
+nrows(filtered_data)
+nrow(filtered_data)
+nrow(data)
+s9b <- ggplot(filtered_data, aes(x = chl_big, y = time));#
+s9b + geom_point(aes(color=factor(pop)));
+s9a <- ggplot(data, aes(x = pe, y = time));#
+s9a + geom_point(aes(color=factor(pop)));
+s9a <- ggplot(data, aes(x = chl_small, y = time));#
+s9a + geom_point(aes(color=factor(pop)));
+s9a <- ggplot(filtered_data, aes(x = chl_small, y = time));#
+s9a + geom_point(aes(color=factor(pop)));
+s9a <- ggplot(ftraining, aes(x = chl_small, y = time));#
+s9a + geom_point(aes(color=factor(pop)));
+source('solutions.r')
+exit
+quit
+exit
+exit
+exit
+quit
+exit

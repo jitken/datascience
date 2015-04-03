@@ -1,0 +1,25 @@
+select count(*) from (
+  select * from Frequency where docid='10398_txt_earn'
+);
+
+select count(*) from (
+  select term from Frequency where docid='10398_txt_earn' and count=1
+);
+
+select count(*) from (
+  select term from Frequency where docid='10398_txt_earn' and count=1
+  union
+  select term from Frequency where docid='925_txt_trade' and count=1
+);
+
+select count(*) from Frequency where term='parliament';
+
+select count(*) from (
+  select docid from Frequency group by docid having sum(count) > 300
+);
+
+select count(*) from (
+  select docid from Frequency where term='world'
+) a inner join (
+  select docid from Frequency where term='transactions'  
+) b on a.docid = b.docid;
